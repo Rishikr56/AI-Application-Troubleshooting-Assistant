@@ -1,6 +1,6 @@
 // Point this at your backend route that calls Gemini and returns JSON shaped like:
 // { severity: "HIGH" | "MEDIUM" | "LOW", cause: string, steps: string[], action: string }
-const API_URL = "https://ai-application-troubleshooting-assistant.onrender.com/amalyze";
+const API_URL = "https://ai-application-troubleshooting-assistant.onrender.com/analyze";
 
 export async function analyzeError(errorText) {
   const res = await fetch(API_URL, {
